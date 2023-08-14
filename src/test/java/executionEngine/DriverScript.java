@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
 
 public class DriverScript {
 
-
     @Test
     public void login() throws InterruptedException {
         ChromeOptions chromeOptions = new ChromeOptions();
@@ -24,7 +23,6 @@ public class DriverScript {
         Thread.sleep(2000);
 
         driver.findElement(By.xpath(".//*[@id='u1']/a[text()='登录']")).click();
-
         // 点击账号密码登录
         driver.findElement(By.id("TANGRAM__PSP_11__changePwdCodeItem")).click();
 
